@@ -214,12 +214,18 @@ header {
 section {
     &.modern-websites {
         width: 100%;
-        height: 300px;
-        position: relative;
+        height: 400px;
+        position: relative; 
+        // margin-bottom: 50px;
+        @media screen and (width:1366px) {
+      
+            height: 200px;
+        }
 
         .bg-red {
             background-color: $subcolor;
-
+            width: 100%;
+            height:100%;
 
             position: absolute;
             top: 30px;
@@ -234,12 +240,14 @@ section {
 
         .bg-purple {
             background-color: rgba($color: $maincolor, $alpha: 0.8);
-
+            width: 100%;
+            height:100%;
 
             position: absolute;
             top: 0;
             color: #ffff;
             padding: 50px 40px;
+            padding-left: 50px;
 
             @media screen and (width:1366px) {
                 border-top-right-radius: 200px;
@@ -257,7 +265,7 @@ section {
 
 section {
     &.choose-us {
-        margin-top: 50px;
+        margin-top: 100px;
 
         h2 {
             @extend %h2;
@@ -764,10 +772,8 @@ footer {
 
           }
       }
-      p{
-          &.p1{
-              margin-right: 500px;
-          }
+      div{
+         
           &.rights{
               color: #ffff;
               font-size: 16px;
@@ -802,7 +808,8 @@ footer {
     border-top-right-radius: 1.5625rem;
     border-bottom-left-radius: 1.5625rem;
     border: 1px solid transparent;
-    padding: 0.6875rem 3.5625rem;
+    // padding: 0.6875rem 3.5625rem;
+    padding: 10px 40px;
     font-size: 1.125rem;
     text-align: center;
     margin: 20px 20px 0 0;
