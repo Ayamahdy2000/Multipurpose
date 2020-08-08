@@ -8,6 +8,10 @@
   line-height: 1.5;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 p {
   color: #777;
 }
@@ -289,8 +293,7 @@ section .slider #exit {
 }
 section .slider .carousel-item img {
   width: 600px;
-  height: 400px;
-  margin: 80px 350px;
+  height: 500px;
 }
 section .bg-blue {
   background-color: #26264b;
